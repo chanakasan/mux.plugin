@@ -1,6 +1,6 @@
 main() {
   local name="$1"
-  sh $nex_tmux_path/src/mux/$name.sh
+  sh $nex_mux_path/src/$name.sh
 }
 
 main "$@"

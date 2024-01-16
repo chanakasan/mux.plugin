@@ -3,7 +3,7 @@
 . ~/nex-bash/lib/lib-tmux.sh
 
 main() {
-  local wd=$HOME/temp/any
+  local wd=$HOME/temp/topic/_none
   cd $wd
   tmux-new "temp"
 }

@@ -3,7 +3,7 @@
 main() {
   local wd=$HOME/gitbook
   cd $wd
-  tmux-new "gitbook"
+  tmux-aoc "gitbook"
 }
 
 main

@@ -3,7 +3,7 @@
 main() {
   local wd=$HOME
   cd $wd
-  tmux-new "home"
+  tmux-aoc "home"
 }
 
 main

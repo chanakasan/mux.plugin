@@ -3,7 +3,7 @@
 main() {
   local wd=$HOME/dotvimrc
   cd $wd
-  tmux-new "dotvimrc"
+  tmux-aoc "dotvimrc"
 }
 
 main

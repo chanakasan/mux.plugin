@@ -32,7 +32,7 @@ mux_at() {
 }
 
 mux_new() {
-  local name=`tmux-new-session-name`
+  local name=`tmux-aoc-session-name`
   tmux new-session -d -s $name -n "main"
   tmux attach-session -t $name:1
 }

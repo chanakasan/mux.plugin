@@ -3,7 +3,7 @@
 main() {
   local wd=$HOME/repos
   cd $wd
-  tmux-new "repos"
+  tmux-aoc "repos"
 }
 
 main

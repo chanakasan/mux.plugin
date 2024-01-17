@@ -3,7 +3,7 @@
 main() {
   local wd=$HOME/sandboxes/startup
   cd $wd
-  tmux-new "start"
+  tmux-aoc "start"
 }
 
 main

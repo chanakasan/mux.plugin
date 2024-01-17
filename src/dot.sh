@@ -3,7 +3,7 @@
 main() {
   local wd=$HOME/dotfiles
   cd $wd
-  tmux-new "dotfiles"
+  tmux-aoc "dotfiles"
 }
 
 main

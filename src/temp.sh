@@ -5,7 +5,7 @@
 main() {
   local wd=$HOME/temp
   cd $wd
-  tmux-new "temp"
+  tmux-aoc "temp"
 }
 
 main

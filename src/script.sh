@@ -3,7 +3,7 @@
 main() {
   local wd=$HOME/script
   cd $wd
-  tmux-new "script"
+  tmux-aoc "script"
 }
 
 main

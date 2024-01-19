@@ -3,41 +3,32 @@
 set -e
 
 main() {
-  local v1="$1"
-  if [ -z "$v1" ]; then
-    mux_at
-  elif [ "$v1" = "new" ]; then
-    mux_new
-  elif [ "$v1" = "create" ]; then
-    mux_create
-  elif [ "$v1" = "ex" ]; then
-    mux_ex
+  local a1="$1"
+  local fn=_$a1
+  if [ -z "$a1" ]; then
+    tmux-ensure
+  elif [[ $(type -t $fn ) == function ]]; then
+    $fn "${@:2}"
   else
-    _mux_start $v1
+    _start $v1
   fi
 }
 
-mux_ex() {
+_list() {
+  tmux list-sessions
+}
+
+_example() {
   local example=$nex_mux_path/src/example.sh
   vi $example
 }
 
-mux_at() {
-  local out=$(tmux-is-running)
-  if [ $out == "true" ]; then
-    tmux at
-  else 
-    _mux_start "home"
-  fi
+_new() {
+  local name=$(tmux-new-session-name)
+  tmux-aoc $name
 }
 
-mux_new() {
-  local name=`tmux-aoc-session-name`
-  tmux new-session -d -s $name -n "main"
-  tmux attach-session -t $name:1
-}
-
-mux_create() {
+_create() {
  vi $nex_mux_path/src/example.sh
 }
 

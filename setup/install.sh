@@ -12,8 +12,14 @@ main() {
   echo " Installing - $title"
   remove_from_bashrc
   copy_to_bashrc
+  print_done
+}
+
+print_done() {
   echo ""
   echo " done"
+  echo " Please reload bashrc"
+  echo " source ~/.bashrc"
   echo ""
 }
 
@@ -35,6 +41,7 @@ copy_to_bashrc() {
   echo "#$start_text" >> $bashrc
   echo 'export nex_mux_path='$nex_mux_path >> $bashrc
   echo 'export PATH=$nex_mux_path/bin:$PATH' >> $bashrc
+  echo 'source $nex_mux_path/bash/main.sh' >> $bashrc
   echo "#$end_text" >> $bashrc
   echo "" >> $bashrc
 }

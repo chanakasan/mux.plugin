@@ -14,6 +14,10 @@ main() {
   fi
 }
 
+_desk() {
+  tmux-aoc "desktop"
+}
+
 _list() {
   tmux list-sessions
 }

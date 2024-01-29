@@ -10,7 +10,7 @@ main() {
   elif [[ $(type -t $fn ) == function ]]; then
     $fn "${@:2}"
   else
-    _start $v1
+    _mux_start $a1
   fi
 }
 
@@ -28,6 +28,10 @@ _list() {
   tmux list-sessions
 }
 
+_ex() {
+  _example
+}
+
 _example() {
   local example=$nex_mux_path/src/example.sh
   vi $example
@@ -36,10 +40,6 @@ _example() {
 _new() {
   local name=$(tmux-new-session-name)
   tmux-aoc $name
-}
-
-_create() {
- vi $nex_mux_path/src/example.sh
 }
 
 main "$@"

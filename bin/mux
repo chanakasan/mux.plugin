@@ -37,7 +37,7 @@ _example() {
   vi $example
 }
 
-_new() {
+_create() {
   local name=$(tmux-new-session-name)
   tmux-aoc $name
 }

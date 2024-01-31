@@ -10,11 +10,41 @@ main() {
   elif [[ $(type -t $fn ) == function ]]; then
     $fn "${@:2}"
   else
-    _mux_start $a1
+    mux_start $a1
   fi
 }
 
 _desk() {
+  mux_desk
+}
+
+_list() {
+  mux_list
+}
+
+_ex() {
+  mux_example
+}
+
+_new() {
+  mux_create
+}
+
+mux_create() {
+  local name=$(tmux-new-session-name)
+  tmux-aoc $name
+}
+
+mux_example() {
+  local example=$nex_mux_path/src/example.sh
+  vi $example
+}
+
+mux_list() {
+  tmux list-sessions
+}
+
+mux_desk() {
   local name="desktop"
   local session_exist=$(tmux-session-exist $name)
   if [ "$session_exist" == "true" ]; then
@@ -24,22 +54,9 @@ _desk() {
   fi
 }
 
-_list() {
-  tmux list-sessions
-}
-
-_ex() {
-  _example
-}
-
-_example() {
-  local example=$nex_mux_path/src/example.sh
-  vi $example
-}
-
-_create() {
-  local name=$(tmux-new-session-name)
-  tmux-aoc $name
+mux_start() {
+  local name="$1"
+  sh $nex_mux_path/src/$name.sh
 }
 
 main "$@"

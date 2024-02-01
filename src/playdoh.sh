@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 main() {
-  local wd=$HOME/@sb/play
+  local wd=$HOME/playDoh
   cd $wd
-  tmux-aoc "play"
+  tmux-aoc "playDoh"
 }
 
 main

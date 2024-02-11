@@ -4,6 +4,8 @@ alias desk="mux desk"
 alias start="mux start"
 alias script="mux script"
 alias gitbook="mux gitbook"
+alias work="mux work"
+alias dev="mux dev"
 
 # new
 alias learn="nx_mux_learn"

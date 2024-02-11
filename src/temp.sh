@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
 
-. ~/nex-bash/lib/lib-tmux.sh
-
 main() {
-  local wd=$HOME/temp
+  local wd=$HOME/tempspace
   cd $wd
   tmux-aoc "temp"
 }

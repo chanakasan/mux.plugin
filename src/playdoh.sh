@@ -3,7 +3,7 @@
 main() {
   local wd=$HOME/playDoh
   cd $wd
-  tmux-aoc "playDoh"
+  tmux-aoc "play"
 }
 
 main

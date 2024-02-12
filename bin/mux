@@ -4,7 +4,7 @@ set -e
 
 main() {
   local a1="$1"
-  local fn=_$a1
+  local fn=_mux_$a1
   if [ -z "$a1" ]; then
     tmux-ensure
   elif [[ $(type -t $fn ) == function ]]; then
@@ -14,37 +14,25 @@ main() {
   fi
 }
 
-_desk() {
-  mux_desk
-}
-
-_list() {
-  mux_list
-}
-
-_ex() {
-  mux_example
-}
-
-_new() {
+_mux_new() {
   mux_create
 }
 
-mux_create() {
+_mux_create() {
   local name=$(tmux-new-session-name)
   tmux-aoc $name
 }
 
-mux_example() {
+_mux_ex() {
   local example=$nex_mux_path/src/example.sh
   vi $example
 }
 
-mux_list() {
+_mux_list() {
   tmux list-sessions
 }
 
-mux_desk() {
+_mux_desk() {
   local name="desktop"
   local session_exist=$(tmux-session-exist $name)
   if [ "$session_exist" == "true" ]; then

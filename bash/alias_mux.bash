@@ -4,12 +4,3 @@ alias desk="mux desk"
 alias start="mux start"
 alias script="mux script"
 alias gitbook="mux gitbook"
-alias work="mux work"
-alias dev="mux dev"
-
-# new
-alias learn="nx_mux_learn"
-alias build="nx_mux_build"
-alias try="nx_mux_try"
-alias play="nx_mux_play"
-alias repo="nx_mux_repo"

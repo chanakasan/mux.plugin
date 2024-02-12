@@ -1,31 +1,35 @@
-nx_mux_try() {
+nx__try() {
   nx_mux_cd try "$HOME/@sb/try"
 }
 
-nx_mux_build() {
+nx__build() {
   nx_mux_cd build "$HOME/@sb/build"
 }
 
-nx_mux_learn() {
+nx__learn() {
   nx_mux_cd learn "$HOME/@sb/learn"
 }
 
-nx_mux_repo() {
+nx__work() {
+  nx_mux_cd work "$HOME/@sb/work"
+}
+
+nx__repo() {
   nx_mux_cd repo "$HOME/repos"
 }
 
-nx_mux_play() {
+nx__play() {
   nx_mux_cd playdoh "$HOME/playDoh"
 }
 
 nx_mux_cd() {
-  local this_name="$1"
+  local name="$1"
   local base="$2"
   local is_tmux=$(tmux-nested)
   local current=$(tmux-current-session)
-  if [ "$current" == "$this_name" ]; then
+  if [ "$current" == "$name" ]; then
     cd "$base"
   else
-    mux $this_name
+    mux $name
   fi
 }

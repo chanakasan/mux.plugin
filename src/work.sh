@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 main() {
-  local wd=$HOME/@sb/work
+  local wd=$HOME/sandbox/work
   cd $wd
   tmux-aoc "work"
 }

@@ -2,7 +2,7 @@ nx_mux_cd() {
   local name="$1"
   local base="$2"
   if [ -z $base ]; then
-    base=$HOME/@sb/$name
+    base=$HOME/sandbox/$name
   fi
   local is_tmux=$(tmux-nested)
   local current=$(tmux-current-session)

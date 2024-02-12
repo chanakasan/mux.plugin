@@ -1,4 +1,4 @@
-nx_mux() {
+nx_mux_cd() {
   local name="$1"
   local base="$2"
   if [ -z $base ]; then

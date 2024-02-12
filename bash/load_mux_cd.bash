@@ -1,4 +1,4 @@
-source $nex_mux_path/lib/underscore_mux.sh
+source $nex_mux_path/lib/mux_cd.sh
 
 alias learn="nx_mux_cd learn"
 alias build="nx_mux_cd build"

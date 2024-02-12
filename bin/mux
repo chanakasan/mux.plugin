@@ -15,7 +15,7 @@ main() {
 }
 
 _mux_new() {
-  mux_create
+  _mux_create
 }
 
 _mux_create() {

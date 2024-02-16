@@ -3,7 +3,7 @@
 main() {
   local wd=$HOME/anything
   cd $wd
-  tmux-aoc "any"
+  tmux-aoc "anything"
 }
 
 main

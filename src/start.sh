@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 main() {
-  local wd=$HOME/wip/startup
+  local wd=$HOME/dev/startup
   cd $wd
   tmux-aoc "startup"
 }

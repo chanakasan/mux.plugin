@@ -2,7 +2,8 @@ nx_mux_cd() {
   local name="$1"
   local base="$2"
   if [ -z $base ]; then
-    base=$HOME/sandbox/$name
+    echo " Usage:  nx_mux_cd <session_name> <dir_path>"
+    exit 1
   fi
   local is_tmux=$(tmux-nested)
   local current=$(tmux-current-session)

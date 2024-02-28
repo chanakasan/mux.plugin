@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 main() {
-  local wd=$HOME/playDoh
+  local wd=$HOME/play
   cd $wd
   tmux-aoc "play"
 }

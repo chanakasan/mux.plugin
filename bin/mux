@@ -6,19 +6,16 @@ main() {
   local a1="$1"
   local fn=_mux_$a1
   if [ -z "$a1" ]; then
-    tmux-ensure
+    _mux_new
+    # tmux-ensure
   elif [[ $(type -t $fn ) == function ]]; then
     $fn "${@:2}"
   else
-    mux_start $a1
+    _start $a1
   fi
 }
 
 _mux_new() {
-  _mux_create
-}
-
-_mux_create() {
   local name=$(tmux-new-session-name)
   tmux-aoc $name
 }
@@ -42,7 +39,7 @@ _mux_desk() {
   fi
 }
 
-mux_start() {
+_start() {
   local name="$1"
   sh $nex_mux_path/src/$name.sh
 }

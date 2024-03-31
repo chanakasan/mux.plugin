@@ -1,6 +1,6 @@
 source $nex_mux_path/lib/mux_cd.sh
 
-alias home="nx_mux_cd home abode"
+alias home="nx_mux_cd home home"
 alias repo="nx_mux_cd repo repo"
 alias temp="nx_mux_cd temp temp"
 alias desk="nx_mux_cd desktop desktop"

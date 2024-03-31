@@ -3,24 +3,25 @@
 set -e
 
 main() {
-  local title="Nex Mux"
-  local dir_name="nex-mux"
+  local dir_name=mux.nexplugin
   local start_text='__nex_mux_start'
   local end_text='__nex_mux_end'
   local bashrc="$HOME/.bashrc"
   local nex_mux_path=$(get_root_path)/$dir_name
-  echo " Installing - $title"
   remove_from_bashrc
   copy_to_bashrc
-  print_done
+  finish
 }
 
-print_done() {
-  echo ""
+start() {
+  echo " Installing Plugin Mux"
+}
+
+finish() {
   echo " done"
   echo " Please reload bashrc"
   echo " source ~/.bashrc"
-  echo ""
+  echo
 }
 
 get_root_path() {

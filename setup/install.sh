@@ -19,6 +19,7 @@ start() {
 
 finish() {
   echo " done"
+  echo
   echo " Please reload bashrc"
   echo " source ~/.bashrc"
   echo
@@ -42,7 +43,7 @@ copy_to_bashrc() {
   echo "#$start_text" >> $bashrc
   echo 'export nex_mux_path='$nex_mux_path >> $bashrc
   echo 'export PATH=$nex_mux_path/bin:$PATH' >> $bashrc
-  echo 'source $nex_mux_path/bash/main.sh' >> $bashrc
+  echo 'source $nex_mux_path/src/bash/main.sh' >> $bashrc
   echo "#$end_text" >> $bashrc
   echo "" >> $bashrc
 }

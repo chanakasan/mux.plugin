@@ -1,4 +1,4 @@
-source $nex_mux_path/lib/mux_cd.sh
+source $nex_mux_path/src/lib/mux_cd.sh
 
 alias home="nx_mux_cd home home"
 alias repo="nx_mux_cd repo repo"

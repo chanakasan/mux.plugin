@@ -1,3 +1,3 @@
-for f in $nex_mux_path/bash/*.bash; do
+for f in $nex_mux_path/src/bash/*.bash; do
   source $f
 done

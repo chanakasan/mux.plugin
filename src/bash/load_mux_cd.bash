@@ -1,8 +1,8 @@
-source $nex_mux_path/src/lib/mux_cd.sh
+source $nex_mux_path/lib/mux_cd.sh
 
 #-- spaces
 alias play="nx_mux_cd playground playground/space"
-alias desktop="nx_mux_cd desktop desktop"
+alias desk="nx_mux_cd desk desk"
 alias temp="nx_mux_cd temp temp"
 #-- groups
 alias home="nx_mux_cd home home"

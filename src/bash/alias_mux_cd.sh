@@ -1,5 +1,3 @@
-source $nex_mux_path/lib/mux_cd.sh
-
 #-- spaces
 alias play="nx_mux_cd playground playground"
 alias desktop="nx_mux_cd desktop desktop"

@@ -21,7 +21,7 @@ _mux_new() {
 }
 
 _mux_ex() {
-  local example=$nex_mux_path/src/mux/example.sh
+  local example=$nex_mux_path/src/main/example.sh
   vi $example
 }
 
@@ -41,7 +41,7 @@ _mux_desk() {
 
 _start() {
   local name="$1"
-  sh $nex_mux_path/src/mux/$name.sh
+  sh $nex_mux_path/src/main/$name.sh
 }
 
 main "$@"

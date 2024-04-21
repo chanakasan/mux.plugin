@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 main() {
-  local wd=$HOME/work/pairdev/allywell-rails
+  local wd=$HOME/work/pairdev/allytime-canvas
   cd $wd
-  tmux-aoc "ally_well"
+  tmux-aoc "allytime"
 }
 
 main

@@ -1,4 +1,3 @@
-source $(nex _config)
 export nex_mux_path=$(nex _plugin mux)
 export PATH=$nex_mux_path/bin:$PATH
 

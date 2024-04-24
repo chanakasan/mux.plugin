@@ -12,3 +12,6 @@ alias dot="nx_mux_cd dot dotfiles"
 alias book="nx_mux_cd gitbook gitbooks"
 alias note="nx_mux_cd note notebooks"
 alias store="nx_mux_cd storage storage_tmp"
+
+#-- proj
+alias al="nx_mux_cd ally work/pairdev/allytime-canvas"

@@ -15,3 +15,4 @@ alias store="nx_mux_cd storage storage_tmp"
 
 #-- proj
 alias al="nx_mux_cd ally work/pairdev/allytime-canvas"
+alias anyad="nx_mux_cd anyad work/pairdev/anyadmin-rails"

@@ -2,7 +2,7 @@
 alias play="nx_mux_cd playground playground"
 alias desktop="nx_mux_cd desktop desktop"
 alias temp="nx_mux_cd temp temp"
-alias conn="nx_mux_cd conn conn"
+alias con="nx_mux_cd conn conn"
 
 #-- groups
 alias home="nx_mux_cd home home"

@@ -15,6 +15,7 @@ alias note="nx_mux_cd note notebooks"
 alias store="nx_mux_cd storage storage_tmp"
 
 #-- proj
-alias al="nx_mux_cd ally work/pairdev/allytime-canvas"
+alias al="nx_mux_cd ally-rails work/pairdev/allytime-canvas"
+alias alp="nx_mux_cd ally-py work/pairdev/allytime-python-api"
 alias netto="nx_mux_cd netto work/netto/portal"
 alias anyad="nx_mux_cd anyad work/pairdev/anyadmin-rails"

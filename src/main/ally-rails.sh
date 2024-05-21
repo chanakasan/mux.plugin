@@ -3,7 +3,7 @@
 main() {
   local wd=$HOME/work/pairdev/allytime-canvas
   cd $wd
-  tmux-aoc "allytime"
+  tmux-aoc "ally-rails"
 }
 
 main

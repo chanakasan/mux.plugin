@@ -3,6 +3,7 @@ alias play="nx_mux_cd playground playground"
 alias desktop="nx_mux_cd desktop desktop"
 alias temp="nx_mux_cd temp temp"
 alias con="nx_mux_cd conn conn"
+alias proc="nx_mux_cd proc proc"
 
 #-- groups
 alias home="nx_mux_cd home home"
@@ -15,4 +16,5 @@ alias store="nx_mux_cd storage storage_tmp"
 
 #-- proj
 alias al="nx_mux_cd ally work/pairdev/allytime-canvas"
+alias netto="nx_mux_cd netto work/netto/portal"
 alias anyad="nx_mux_cd anyad work/pairdev/anyadmin-rails"

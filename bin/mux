@@ -2,46 +2,43 @@
 
 set -e
 
+export nx_mux_root=$(nex _plugin mux)
+source $nx_mux_root/src/config/fn.sh
+
 main() {
-  local a1="$1"
-  local fn=_mux_$a1
-  if [ -z "$a1" ]; then
-    _mux_new
-    # tmux-ensure
-  elif [[ $(type -t $fn ) == function ]]; then
-    $fn "${@:2}"
-  else
-    _start $a1
+  handle_empty $@
+  try_function $@
+  try_script $@
+}
+
+handle_empty() {
+  if [ -z "$1" ]; then
+    mux_new
   fi
 }
 
-_mux_new() {
+try_function() {
+  local fn=mux_$1
+  if [[ $(type -t $fn ) == function ]]; then
+    $fn "${@:2}"
+    exit
+  fi
+}
+
+try_script() {
+  local name="$1"
+  sh $nx_mux_root/src/mux/$name.sh
+}
+
+# mux_*
+mux_new() {
   local name=$(tmux-new-session-name)
   tmux-aoc $name
 }
 
-_mux_ex() {
-  local example=$nx_mux_root/src/mux/example.sh
-  vi $example
-}
-
-_mux_list() {
+mux_list() {
   tmux list-sessions
-}
-
-_mux_desk() {
-  local name="desktop"
-  local session_exist=$(tmux-session-exist $name)
-  if [ "$session_exist" == "true" ]; then
-    tmux-attach $name
-  else
-    tmux-create-desktop
-  fi
-}
-
-_start() {
-  local name="$1"
-  sh $nx_mux_root/src/mux/$name.sh
+  echo
 }
 
 main "$@"

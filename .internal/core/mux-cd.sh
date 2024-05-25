@@ -1,6 +1,6 @@
 nx_mux_cd() {
   local name="$1"
-  local base=$HOME/$2
+  local base=$2
   if [ -z $base ]; then
     echo " Usage:  nx_mux_cd <session_name> <dir_path>"
     exit 1

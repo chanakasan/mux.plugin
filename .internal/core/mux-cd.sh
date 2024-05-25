@@ -3,7 +3,7 @@ nx_mux_cd() {
   local base=$2
   if [ -z $base ]; then
     echo " Usage:  nx_mux_cd <session_name> <dir_path>"
-    exit 1
+    return 1
   fi
   local is_tmux=$(tmux-nested)
   local current=$(tmux-current-session)

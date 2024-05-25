@@ -1,2 +1,3 @@
-source $(nex _config)
-bash $nex_support/plugin/install/run_default.sh "mux"
+echo " Installer - mux.plugin"
+echo " Nothing to install"
+echo

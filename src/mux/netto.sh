@@ -3,7 +3,7 @@
 main() {
   local wd=$HOME/work/netto/nettowelt-portal
   cd $wd
-  tmux-aoc "netto-portal"
+  tmux-aoc "netto"
 }
 
 main

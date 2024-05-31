@@ -17,5 +17,6 @@ alias store="nx_mux_cd storage ~/storage_tmp"
 #-- proj
 alias al="nx_mux_cd ally-rails ~/work/allytime/allytime-canvas"
 alias alp="nx_mux_cd ally-py ~/work/allytime/allytime-python-api"
-alias netto="nx_mux_cd netto ~/work/netto/portal"
+alias neto="nx_mux_cd netto ~/work/netto/nettowelt-portal"
 alias anyad="nx_mux_cd anyad ~/work/pairdev/anyadmin-rails"
+alias auxi="nx_mux_cd auxi ~/work/youAreUs/ksauxilia"

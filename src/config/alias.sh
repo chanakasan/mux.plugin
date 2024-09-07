@@ -1,5 +1,4 @@
 #-- desktops
-alias desktop="nx_mux_cd desktop ~/desktop"
 alias home="nx_mux_cd home ~/home"
 alias temp="nx_mux_cd temp ~/temp"
 alias con="nx_mux_cd conn ~/conn"

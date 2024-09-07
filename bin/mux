@@ -14,6 +14,7 @@ main() {
 handle_empty() {
   if [ -z "$1" ]; then
     mux_new
+    exit
   fi
 }
 
@@ -28,12 +29,17 @@ try_function() {
 try_script() {
   local name="$1"
   sh $nx_mux_root/src/mux/$name.sh
+  exit
 }
 
 # mux_*
 mux_new() {
   local name=$(tmux-new-session-name)
-  tmux-aoc $name
+  if [[ "$(pwd)" == $HOME ]]; then
+    mux home
+  else
+    tmux-aoc $name
+  fi
 }
 
 mux_list() {

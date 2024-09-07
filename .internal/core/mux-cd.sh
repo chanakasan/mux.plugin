@@ -7,7 +7,7 @@ nx_mux_cd() {
   fi
   local is_tmux=$(tmux-nested)
   local current=$(tmux-current-session)
-  if [ "$current" == "$name" ]; then
+  if [[ $is_tmux == "true" && "$current" == "$name" ]]; then
     cd "$base"
   else
     mux $name

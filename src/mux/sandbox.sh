@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 main() {
-  local wd=$HOME/notebooks
+  local wd=$HOME/sandbox
   cd $wd
-  tmux-aoc "note"
+  tmux-aoc "sandbox"
 }
 
 main

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 main() {
-  local wd=$HOME/dev/app/unlimited
+  local wd=$HOME/dev/build/app/unlimited
   local s=one
   cd $wd
   

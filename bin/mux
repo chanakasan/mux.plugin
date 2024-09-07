@@ -27,8 +27,13 @@ try_function() {
 
 try_script() {
   local name="$1"
-  sh $nx_mux_root/src/mux/$name.sh
-  exit
+  if [[ -f "$nx_mux_root/src/mux/work/$name.sh" ]]; then
+    sh $nx_mux_root/src/mux/work/$name.sh
+    exit
+  else
+    sh $nx_mux_root/src/mux/$name.sh
+    exit
+  fi
 }
 
 # mux_*

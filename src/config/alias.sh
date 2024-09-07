@@ -9,9 +9,7 @@ alias gb="nx_mux_cd gitbooks ~/gitbooks"
 alias note="nx_mux_cd notes ~/notes"
 alias sb="nx_mux_cd sandbox ~/sandbox"
 alias play="nx_mux_cd playground ~/playground"
-
-#-- ephem
-alias store="nx_mux_cd storage ~/ephem/store"
+alias store="nx_mux_cd store ~/store"
 
 #-- work
 alias al="nx_mux_cd ally-rails ~/work/allytime/allytime-canvas"

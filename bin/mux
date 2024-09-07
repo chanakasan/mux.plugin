@@ -3,7 +3,6 @@
 set -e
 
 export nx_mux_root=$(nex _plugin mux)
-source $nx_mux_root/src/config/fn.sh
 
 main() {
   handle_empty $@

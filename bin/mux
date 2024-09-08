@@ -12,7 +12,7 @@ main() {
 
 handle_empty() {
   if [ -z "$1" ]; then
-    mux_new
+    mux_create_session
     exit
   fi
 }
@@ -30,14 +30,15 @@ try_script() {
   if [[ -f "$nx_mux_root/src/mux/work/$name.sh" ]]; then
     sh $nx_mux_root/src/mux/work/$name.sh
     exit
-  else
+  elif [[ -f "$nx_mux_root/src/mux/$name.sh" ]]; then
     sh $nx_mux_root/src/mux/$name.sh
     exit
+  else
+    echo " not found: mux $name"
   fi
 }
 
-# mux_*
-mux_new() {
+mux_create_session() {
   local name=$(tmux-new-session-name)
   if [[ "$(pwd)" == $HOME ]]; then
     mux home

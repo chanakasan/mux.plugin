@@ -8,9 +8,11 @@ alias dot="nx_mux_cd dot ~/dotfiles"
 alias gb="nx_mux_cd gitbooks ~/gitbooks"
 alias note="nx_mux_cd notes ~/notes"
 alias sb="nx_mux_cd sandbox ~/sandbox"
+alias dev="nx_mux_cd dev ~/dev"
 alias play="nx_mux_cd playground ~/playground"
 alias store="nx_mux_cd store ~/store"
 alias base="nx_mux_cd basecamp ~/basecamp"
+alias tpl="nx_mux_cd templates ~/templates"
 
 #-- work
 alias al="nx_mux_cd ally-rails ~/work/allytime/allytime-canvas"

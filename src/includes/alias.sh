@@ -1,6 +1,7 @@
 #-- spaces
 alias home="nx_mux_cd home ~/home"
 alias desk="nx_mux_cd desk ~/workspace/desk"
+alias prac="nx_mux_cd practice ~/workspace/practice-desk"
 alias temp="nx_mux_cd temp ~/temp"
 alias con="nx_mux_cd conn ~/conn"
 alias proc="nx_mux_cd proc ~/proc"

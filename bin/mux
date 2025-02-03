@@ -27,11 +27,11 @@ try_function() {
 
 try_script() {
   local name="$1"
-  if [[ -f "$nx_mux_root/src/mux/work/$name.sh" ]]; then
-    sh $nx_mux_root/src/mux/work/$name.sh
+  if [[ -f "$nx_mux_root/userland/mux/work/$name.sh" ]]; then
+    sh $nx_mux_root/userland/mux/work/$name.sh
     exit
-  elif [[ -f "$nx_mux_root/src/mux/$name.sh" ]]; then
-    sh $nx_mux_root/src/mux/$name.sh
+  elif [[ -f "$nx_mux_root/userland/mux/$name.sh" ]]; then
+    sh $nx_mux_root/userland/mux/$name.sh
     exit
   else
     echo " not found: mux $name"

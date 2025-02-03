@@ -1,26 +1,13 @@
+# places
+alias desk="nx_mux_cd desk ~/workspace/desk"
+alias practice="nx_mux_cd practice ~/workspace/practice-desk"
+
 #-- spaces
 alias home="nx_mux_cd home ~/home"
-alias desk="nx_mux_cd desk ~/workspace/desk"
-alias prac="nx_mux_cd practice ~/workspace/practice-desk"
+alias work="nx_mux_cd desk ~/workspace"
+alias lab="nx_mux_cd desk ~/workspace"
 alias temp="nx_mux_cd temp ~/temp"
 alias con="nx_mux_cd conn ~/conn"
 alias proc="nx_mux_cd proc ~/proc"
 alias repo="nx_mux_cd repo ~/repo"
 alias dot="nx_mux_cd dot ~/dotfiles"
-alias gb="nx_mux_cd gitbooks ~/gitbooks"
-alias note="nx_mux_cd notes ~/notes"
-alias sb="nx_mux_cd sandbox ~/sandbox"
-alias dev="nx_mux_cd dev ~/dev"
-alias play="nx_mux_cd playground ~/playground"
-alias store="nx_mux_cd store ~/store"
-alias base="nx_mux_cd basecamp ~/basecamp"
-alias tpl="nx_mux_cd templates ~/templates"
-
-#-- work
-alias al="nx_mux_cd allytime ~/client-proj/allytime"
-alias netto="nx_mux_cd netto ~/client-proj/netto"
-# alias anyad="nx_mux_cd anyad ~/work/pairdev/anyadmin-rails"
-# alias auxi="nx_mux_cd auxi ~/work/youAreUs/ksauxilia"
-# alias 123="nx_mux_cd 123 ~/work/hiring/interview123"
-# alias pzn="nx_mux_cd pzn ~/work/pzn/pzncheck-rails"
-# alias pznapi="nx_mux_cd pzn_api ~/work/pzn/pzn_api"

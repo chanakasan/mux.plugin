@@ -1,0 +1,19 @@
+{
+	"mux session template": {
+		"prefix": "mux-tpl",
+		"description": "",
+		"scope": "shellscript",
+		"body": [
+			"#!/usr/bin/env bash",
+			"",
+			"main() {",
+			"  local wd=\\$HOME/_1_",
+			"  cd $wd",
+			"  tmux-aoc \"_2_\"",
+			"}",
+			"",
+			"main",
+			""
+		]
+	}
+}

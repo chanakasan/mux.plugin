@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 main() {
-  local wd=$HOME/dev
+  local wd=$HOME/workspace
   cd $wd
-  tmux-aoc "dev"
+  tmux-aoc "work"
 }
 
 main

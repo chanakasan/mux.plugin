@@ -1,8 +1,8 @@
 # places
 alias desk="nx_mux_cd desk ~/workspace/desk"
-alias practice="nx_mux_cd practice ~/workspace/practice-desk"
 
 #-- spaces
+alias spaces="nx_mux_cd spaces ~/spaces"
 alias work="nx_mux_cd work ~/workspace"
 alias lab="nx_mux_cd lab ~/lab"
 alias home="nx_mux_cd home ~/home"

@@ -3,7 +3,7 @@ alias desk="nx_mux_cd desk ~/workspace/desk"
 
 #-- spaces
 alias spaces="nx_mux_cd spaces ~/spaces"
-alias work="nx_mux_cd work ~/workspace"
+alias work="nx_mux_cd work ~/work-spaces"
 alias lab="nx_mux_cd lab ~/lab"
 alias home="nx_mux_cd home ~/home"
 alias temp="nx_mux_cd temp ~/temp"

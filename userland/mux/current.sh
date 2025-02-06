@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 main() {
-  local wd=$HOME/ephem/temp
+  local wd=$HOME/current
   cd $wd
-  tmux-aoc "temp"
+  tmux-aoc "current"
 }
 
 main

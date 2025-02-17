@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 main() {
-  local wd=$HOME/ephem/temp
+  local wd=$HOME/temp
   cd $wd
   tmux-aoc "temp"
 }

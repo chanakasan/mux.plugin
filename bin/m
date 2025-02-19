@@ -1,0 +1,11 @@
+mux_create_session() {
+  local name="null"
+  if [[ "$(pwd)" == $HOME ]]; then
+    mux home
+  else
+    name=$(tmux-new-session-name)
+    tmux-aoc $name
+  fi
+}
+
+mux_create_session

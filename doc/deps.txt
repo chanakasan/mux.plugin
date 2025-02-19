@@ -1,3 +1,4 @@
 # deps
 
-> tmux 3.2 or above
+> tmux 3.4 or above
+https://github.com/tmux/tmux/wiki/Installing#from-source-tarball

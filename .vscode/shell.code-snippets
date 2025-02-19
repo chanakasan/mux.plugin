@@ -1,6 +1,6 @@
 {
 	"mux session template": {
-		"prefix": "mux-tpl",
+		"prefix": "mux-session-tpl",
 		"description": "",
 		"scope": "shellscript",
 		"body": [

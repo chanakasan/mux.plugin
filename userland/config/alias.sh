@@ -8,8 +8,3 @@ alias proc="nx_mux_cd proc ~/proc"
 alias repo="nx_mux_cd repo ~/repos"
 alias dot="nx_mux_cd dot ~/dotfiles"
 alias ephem="nx_mux_cd ephem ~/ephemera"
-
-#-- current
-alias work="nx_mux_cd work ~/workspace"
-alias sandbox="nx_mux_cd sandbox ~/sandbox"
-alias sb=sandbox

@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 main() {
-  local wd=$HOME/ephemera
+  local wd=$HOME/ephemar
   cd $wd
-  tmux-aoc "ephemera"
+  tmux-aoc "ephem-archive"
 }
 
 main

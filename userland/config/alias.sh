@@ -1,6 +1,6 @@
 # places
 alias current="nx_mux_cd current ~/current"
-alias temp="nx_mux_cd temp ~/temp"
+alias temp="nx_mux_cd temp-zones ~/temp-zones"
 alias space="nx_mux_cd space ~/space"
 alias home="nx_mux_cd home ~/home"
 alias con="nx_mux_cd conn ~/conn"

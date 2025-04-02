@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 main() {
-  local wd=$HOME/space
+  local wd=$HOME/drive
   cd $wd
-  tmux-aoc "space"
+  tmux-aoc "drive"
 }
 
 main
